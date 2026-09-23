@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 185.255.179.11
-  port: 9443
+  server: 104.21.24.95
+  port: 443
   udp: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: hub-de-03.hanvpn.cc
-  skip-cert-verify: false
+  type: trojan
+  password: Telegram_healer_config
+  sni: 1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /de03-ws-8e47a
-    headers:
-      Host: hub-de-03.hanvpn.cc
+    path: /tr/zJi4ccv7FeEo780U?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
