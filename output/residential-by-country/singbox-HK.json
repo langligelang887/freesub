@@ -4,19 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "24864168545164.oylfmxz.cn",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
       "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
+      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "24864168545164.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
+        "server_name": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
