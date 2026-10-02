@@ -4,33 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.57.84
-  port: 8443
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
+  server: trackydev.site
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: trackydev.site
   skip-cert-verify: false
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: trackydev.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe
 rules:
 - MATCH,PROXIES
